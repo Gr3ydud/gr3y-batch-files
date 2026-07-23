@@ -11,10 +11,10 @@ echo press D to exit
 echo ============================
 
 set /p choice="<input> "
-if /i "%choice%=="A" goto LaunchA
-if /i "%choice%=="B" goto LaunchB
-if /i "%choice%=="C" goto LaunchC
-if /i "%choice%=="D" goto end
+if /i "%choice%"=="A" goto LaunchA
+if /i "%choice%"=="B" goto LaunchB
+if /i "%choice%"=="C" goto LaunchC
+if /i "%choice%"=="D" goto end
 
 echo Try again.
 pause
