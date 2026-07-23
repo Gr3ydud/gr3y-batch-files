@@ -2,25 +2,30 @@
 :menu
 color 6
 cls
-
+echo info
+echo ===============================
 echo NAK-88 TOOL
-echo ===================
+echo VERSION 1 "Ansuz"
+ipconfig | findstr /i "IPv4"
+echo ===============================
+echo Inputs
+echo ===============================
 echo press N to launch MIDAS
 echo press Z to launch pytool
 echo press X to return
-echo ===================
+echo ===============================
 
-set /p choice="INPUT "
-if /i "%choice%=="N" goto LaunchN
-if /i "%choice%=="Z" goto LaunchZ
+set /p choice="NAK-88>> "
+if /i "%choice%=="A" goto LaunchA
+if /i "%choice%=="B" goto LaunchB
 if /i "%choice%=="X" goto LaunchX
-
+if /i "%choice%=="1" goto end
 echo Try again.
 pause
 goto menu
 
 :launchN
-call MIDAS.bat
+call test.bat
 goto menu
 
 :launchZ
@@ -33,4 +38,6 @@ goto menu
 
 :end
 echo Operations completed.
+timeout /t 5 > NUL
 exit
+
