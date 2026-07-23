@@ -4,8 +4,8 @@ cls
 
 echo ===============================
 echo press A to launch NAK-88
-echo press B to launch nothing
-echo press C to launch nothing
+echo press B to launch test
+echo press C to launch test2
 echo ===============================
 
 set /p choice="INPUT "
