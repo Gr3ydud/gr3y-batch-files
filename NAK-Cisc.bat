@@ -1,12 +1,13 @@
 @echo off
 :menu
 cd "%userprofile%\desktop"
-color 9
+color 4
 cls
 echo info
 echo ===============================
-echo NAK-88 "Cisco" Edition
-echo VERSION 2 "Thuriaz"
+echo NAK-88 "Cisc" Edition
+echo "TBTP"
+echo VERSION 2 "Cerium"
 ipconfig | findstr /i "IPv4"
 echo ===============================
 echo Inputs
@@ -18,7 +19,6 @@ echo  V to renew ip
 echo  C to run a python thing, tbd
 echo  1 to exit
 echo ===============================
-color 4
 echo Command-Line Interface
 set /p choice="NAK-88 Input>> "
 if /i "%choice%"=="A" goto LaunchA
