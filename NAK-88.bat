@@ -5,7 +5,8 @@ cls
 echo info
 echo ===============================
 echo NAK-88 TOOL
-echo VERSION 1 "Ansuz"
+echo Network-Aimed Kit
+echo VERSION BETA-1 "Ansuz"
 ipconfig | findstr /i "IPv4"
 echo ===============================
 echo Inputs
