@@ -16,10 +16,10 @@ echo press X to return
 echo ===============================
 
 set /p choice="NAK-88>> "
-if /i "%choice%=="A" goto LaunchA
-if /i "%choice%=="B" goto LaunchB
-if /i "%choice%=="X" goto LaunchX
-if /i "%choice%=="1" goto end
+if /i "%choice%"=="A" goto LaunchA
+if /i "%choice%"=="B" goto LaunchB
+if /i "%choice%"=="X" goto LaunchX
+if /i "%choice%"=="1" goto end
 echo Try again.
 pause
 goto menu
