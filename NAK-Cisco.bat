@@ -1,26 +1,31 @@
 @echo off
 :menu
 cd "%userprofile%\desktop"
-color 6
+color 9
 cls
 echo info
 echo ===============================
-echo NAK-88 Desktop Edition
+echo NAK-88 "Cisco" Edition
 echo VERSION 2 "Thuriaz"
 ipconfig | findstr /i "IPv4"
 echo ===============================
 echo Inputs
 echo ===============================
-echo press N to launch MIDAS
-echo press Z to launch pythontool
-echo press X to return
+echo  N to launch ?
+echo  Z to launch ?
+echo  X to return
+echo  V to renew ip
+echo  C to run a python thing, tbd
+echo  1 to exit
 echo ===============================
+color 4
 echo Command-Line Interface
 set /p choice="NAK-88 Input>> "
 if /i "%choice%"=="A" goto LaunchA
 if /i "%choice%"=="B" goto LaunchB
 if /i "%choice%"=="X" goto LaunchX
 if /i "%choice%"=="1" goto end
+if /i "%choice%"=="V" goto launchV
 echo Try again.
 pause
 goto menu
@@ -36,6 +41,9 @@ goto menu
 :launchX
 call Gr3yframe.bat
 goto menu
+
+:launchV
+ipconfig /renew
 
 :end
 echo Operations completed.
