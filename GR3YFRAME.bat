@@ -9,9 +9,9 @@ echo press C to launch test2
 echo ===============================
 
 set /p choice="INPUT "
-if /i "%choice%=="A" goto LaunchA
-if /i "%choice%=="B" goto LaunchB
-if /i "%choice%=="C" goto LaunchC
+if /i "%choice%"=="A" goto LaunchA
+if /i "%choice%"=="B" goto LaunchB
+if /i "%choice%"=="C" goto LaunchC
 
 echo Try again.
 pause
