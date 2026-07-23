@@ -11,8 +11,8 @@ echo press X to return
 echo ===================
 
 set /p choice="INPUT "
-if /i "%choice%=="A" goto LaunchA
-if /i "%choice%=="B" goto LaunchB
+if /i "%choice%=="N" goto LaunchN
+if /i "%choice%=="Z" goto LaunchZ
 if /i "%choice%=="X" goto LaunchX
 
 echo Try again.
