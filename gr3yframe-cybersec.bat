@@ -1,5 +1,6 @@
 @echo off
 :menu
+color 2
 cd /d "%userprofile%\desktop"
 cls
 
@@ -10,7 +11,7 @@ echo press C to launch NAK-88
 echo press D to exit
 echo ============================
 
-set /p choice="<input> "
+set /p choice="T00L CLI>> "
 if /i "%choice%"=="A" goto LaunchA
 if /i "%choice%"=="B" goto LaunchB
 if /i "%choice%"=="C" goto LaunchC
