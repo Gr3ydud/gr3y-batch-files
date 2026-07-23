@@ -20,7 +20,7 @@ pause
 goto menu
 
 :launchN
-call test.bat
+call MIDAS.bat
 goto menu
 
 :launchZ
